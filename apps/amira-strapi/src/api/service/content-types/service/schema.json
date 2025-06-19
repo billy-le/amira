@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "services",
+  "info": {
+    "singularName": "service",
+    "pluralName": "services",
+    "displayName": "Service"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "body_part": {
+      "type": "enumeration",
+      "required": true,
+      "enum": [
+        "hands",
+        "feet",
+        "face",
+        "private"
+      ]
+    },
+    "price": {
+      "type": "decimal"
+    }
+  }
+}
